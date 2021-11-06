@@ -21,13 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lemonades device
 $(call inherit-product, device/oneplus/lemonades/device.mk)
 
-# Inherit some common aosp stuff.
-$(call inherit-product, vendor/aosp/common.mk)
-
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := aosp_lemonades
+PRODUCT_NAME := lemonades
 PRODUCT_DEVICE := lemonades
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -37,8 +34,11 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlus9R \
-    PRODUCT_NAME=OnePlus9R
+    PRODUCT_NAME=OnePlus9R \
+    PRIVATE_BUILD_DESC="OnePlus9R-user 11   release-keys"
 
-WITH_GAPPS := true
+BUILD_FINGERPRINT := OnePlus/OnePlus9R_IND/OnePlus9R:11/RKQ1.201112.002/2109081911:user/release-keys
+
+WITH_GMS := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
