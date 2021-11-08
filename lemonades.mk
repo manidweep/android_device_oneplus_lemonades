@@ -34,11 +34,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlus9R \
-    PRODUCT_NAME=OnePlus9R \
-    PRIVATE_BUILD_DESC="OnePlus9R-user 11   release-keys"
+    PRODUCT_NAME=OnePlus9R
 
-BUILD_FINGERPRINT := OnePlus/OnePlus9R_IND/OnePlus9R:11/RKQ1.201112.002/2109081911:user/release-keys
-
+BUILD_FINGERPRINT := google/redfin/redfin:12/SPB5.210812.002/7671067:user/release-keys
 WITH_GMS := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
