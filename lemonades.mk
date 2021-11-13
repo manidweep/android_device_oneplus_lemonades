@@ -36,7 +36,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlus9R \
     PRODUCT_NAME=OnePlus9R
 
-BUILD_FINGERPRINT := google/redfin/redfin:12/SPB5.210812.002/7671067:user/release-keys
+BUILD_FINGERPRINT := google/raven/raven:12/SD1A.210817.036/7805805:user/release-keys
+
 WITH_GMS := true
+
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
