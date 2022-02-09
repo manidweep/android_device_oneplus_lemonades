@@ -21,10 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lemonades device
 $(call inherit-product, device/oneplus/lemonades/device.mk)
 
+# Inherit some common EvolutionX stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := lemonades
+PRODUCT_NAME := evolution_lemonades
 PRODUCT_DEVICE := lemonades
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -36,7 +39,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlus9R \
     PRODUCT_NAME=OnePlus9R
 
+#Gapps
+TARGET_GAPPS_ARCH := arm64
+
 TARGET_SUPPORTS_QUICK_TAP := true
-WITH_GMS := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
